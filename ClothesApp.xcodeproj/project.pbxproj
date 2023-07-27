@@ -7,18 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C935CE8B298D658900E7F844 /* ClothesViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935CE8A298D658900E7F844 /* ClothesViewViewModel.swift */; };
+		C969A5152A72999E00567358 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C969A5142A72999E00567358 /* FirebaseAnalytics */; };
+		C969A5172A72999E00567358 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C969A5162A72999E00567358 /* FirebaseAnalyticsSwift */; };
+		C969A5192A729CF500567358 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5182A729CF500567358 /* AuthView.swift */; };
+		C969A51C2A729D1200567358 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A51B2A729D1200567358 /* AuthManager.swift */; };
+		C969A5202A729DA400567358 /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A51F2A729DA400567358 /* SignUpEmailView.swift */; };
+		C969A5222A72A32A00567358 /* AuthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5212A72A32A00567358 /* AuthDataModel.swift */; };
+		C969A5272A72A47B00567358 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5262A72A47B00567358 /* RootView.swift */; };
+		C969A5292A72A5CE00567358 /* SignUpEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5282A72A5CE00567358 /* SignUpEmailViewModel.swift */; };
+		C969A52D2A72A64400567358 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C969A52C2A72A64400567358 /* FirebaseAuth */; };
+		C969A52F2A72AD3600567358 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C969A52E2A72AD3600567358 /* GoogleService-Info.plist */; };
+		C969A5322A72B0B700567358 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5312A72B0B700567358 /* AccountView.swift */; };
+		C969A5342A72B0BE00567358 /* AccountViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5332A72B0BE00567358 /* AccountViewViewModel.swift */; };
+		C969A5372A72B91200567358 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969A5362A72B91200567358 /* Order.swift */; };
+		C96E6731299937BF007D986C /* RatingViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E6730299937BF007D986C /* RatingViewViewModel.swift */; };
+		C96E673C299C0441007D986C /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E673B299C0441007D986C /* ProductsView.swift */; };
+		C96E6740299C0464007D986C /* ProductsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E673F299C0464007D986C /* ProductsViewViewModel.swift */; };
+		C96E6742299C0475007D986C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E6741299C0475007D986C /* Product.swift */; };
+		C96E6746299D3596007D986C /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E6745299D3596007D986C /* ProductDetailView.swift */; };
 		C9F4446E2951E4BB0081DFFC /* ClothesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4446D2951E4BB0081DFFC /* ClothesAppApp.swift */; };
-		C9F444702951E4BB0081DFFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4446F2951E4BB0081DFFC /* ContentView.swift */; };
 		C9F444722951E4BD0081DFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F444712951E4BD0081DFFC /* Assets.xcassets */; };
 		C9F444752951E4BD0081DFFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F444742951E4BD0081DFFC /* Preview Assets.xcassets */; };
+		C9F4447E2951E5110081DFFC /* Clothe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F4447D2951E5110081DFFC /* Clothe.swift */; };
+		C9F44487295302150081DFFC /* Color-theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F44486295302150081DFFC /* Color-theme.swift */; };
+		C9F444AF296720600081DFFC /* ClotheDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444AE296720600081DFFC /* ClotheDetailView.swift */; };
+		C9F444B1296763430081DFFC /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444B0296763430081DFFC /* Favorites.swift */; };
+		C9F444B32967634E0081DFFC /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444B22967634E0081DFFC /* FileManager.swift */; };
+		C9F444B6296854770081DFFC /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444B5296854770081DFFC /* AppTabView.swift */; };
+		C9F444B8296854920081DFFC /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444B7296854920081DFFC /* FavoritesView.swift */; };
+		C9F444BC296854CE0081DFFC /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444BB296854CE0081DFFC /* BagView.swift */; };
+		C9F444BE296854DB0081DFFC /* ClothesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444BD296854DB0081DFFC /* ClothesView.swift */; };
+		C9F444C6296AF8F10081DFFC /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444C5296AF8F10081DFFC /* RatingView.swift */; };
+		C9F444CC296DDB540081DFFC /* BagItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F444CB296DDB540081DFFC /* BagItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C935CE8A298D658900E7F844 /* ClothesViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesViewViewModel.swift; sourceTree = "<group>"; };
+		C969A5182A729CF500567358 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		C969A51B2A729D1200567358 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		C969A51F2A729DA400567358 /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
+		C969A5212A72A32A00567358 /* AuthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataModel.swift; sourceTree = "<group>"; };
+		C969A5262A72A47B00567358 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C969A5282A72A5CE00567358 /* SignUpEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewModel.swift; sourceTree = "<group>"; };
+		C969A52E2A72AD3600567358 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C969A5312A72B0B700567358 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		C969A5332A72B0BE00567358 /* AccountViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewViewModel.swift; sourceTree = "<group>"; };
+		C969A5362A72B91200567358 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C96E6730299937BF007D986C /* RatingViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewViewModel.swift; sourceTree = "<group>"; };
+		C96E673B299C0441007D986C /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		C96E673F299C0464007D986C /* ProductsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewViewModel.swift; sourceTree = "<group>"; };
+		C96E6741299C0475007D986C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C96E6745299D3596007D986C /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		C9F4446A2951E4BB0081DFFC /* ClothesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F4446D2951E4BB0081DFFC /* ClothesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesAppApp.swift; sourceTree = "<group>"; };
-		C9F4446F2951E4BB0081DFFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9F444712951E4BD0081DFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9F444742951E4BD0081DFFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9F4447D2951E5110081DFFC /* Clothe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothe.swift; sourceTree = "<group>"; };
+		C9F44486295302150081DFFC /* Color-theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-theme.swift"; sourceTree = "<group>"; };
+		C9F444AE296720600081DFFC /* ClotheDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotheDetailView.swift; sourceTree = "<group>"; };
+		C9F444B0296763430081DFFC /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		C9F444B22967634E0081DFFC /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		C9F444B5296854770081DFFC /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		C9F444B7296854920081DFFC /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		C9F444BB296854CE0081DFFC /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
+		C9F444BD296854DB0081DFFC /* ClothesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesView.swift; sourceTree = "<group>"; };
+		C9F444C5296AF8F10081DFFC /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		C9F444CB296DDB540081DFFC /* BagItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +81,150 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C969A5172A72999E00567358 /* FirebaseAnalyticsSwift in Frameworks */,
+				C969A52D2A72A64400567358 /* FirebaseAuth in Frameworks */,
+				C969A5152A72999E00567358 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C969A51A2A729CF900567358 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C969A5182A729CF500567358 /* AuthView.swift */,
+				C969A52A2A72A5D200567358 /* SignUpWithEmail */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C969A52A2A72A5D200567358 /* SignUpWithEmail */ = {
+			isa = PBXGroup;
+			children = (
+				C969A51F2A729DA400567358 /* SignUpEmailView.swift */,
+				C969A5282A72A5CE00567358 /* SignUpEmailViewModel.swift */,
+			);
+			path = SignUpWithEmail;
+			sourceTree = "<group>";
+		};
+		C969A52B2A72A64400567358 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C969A5302A72B09E00567358 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				C969A5312A72B0B700567358 /* AccountView.swift */,
+				C969A5332A72B0BE00567358 /* AccountViewViewModel.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		C969A5352A72B8EF00567358 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C96E672F299937A0007D986C /* RatingView */,
+				C9F444CB296DDB540081DFFC /* BagItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C969A5382A72B98D00567358 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				C9F444B0296763430081DFFC /* Favorites.swift */,
+				C9F444B7296854920081DFFC /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		C969A5392A72B9A600567358 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				C969A5362A72B91200567358 /* Order.swift */,
+				C9F444BB296854CE0081DFFC /* BagView.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		C969A53A2A72B9DA00567358 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				C9F444B5296854770081DFFC /* AppTabView.swift */,
+				C969A5382A72B98D00567358 /* Favorites */,
+				C969A5392A72B9A600567358 /* Order */,
+				C96E672D2999363F007D986C /* ProductsView */,
+				C96E673A299C0377007D986C /* ClothesView */,
+				C969A5302A72B09E00567358 /* AccountView */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		C969A53B2A72B9E800567358 /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				C969A51A2A729CF900567358 /* Authentication */,
+			);
+			path = AuthenticationViews;
+			sourceTree = "<group>";
+		};
+		C969A53C2A72BA0F00567358 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				C969A51B2A729D1200567358 /* AuthManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		C96E672C29993304007D986C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9F4447D2951E5110081DFFC /* Clothe.swift */,
+				C96E6741299C0475007D986C /* Product.swift */,
+				C969A5212A72A32A00567358 /* AuthDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C96E672D2999363F007D986C /* ProductsView */ = {
+			isa = PBXGroup;
+			children = (
+				C96E673B299C0441007D986C /* ProductsView.swift */,
+				C96E6745299D3596007D986C /* ProductDetailView.swift */,
+				C96E673F299C0464007D986C /* ProductsViewViewModel.swift */,
+			);
+			path = ProductsView;
+			sourceTree = "<group>";
+		};
+		C96E672F299937A0007D986C /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				C9F444C5296AF8F10081DFFC /* RatingView.swift */,
+				C96E6730299937BF007D986C /* RatingViewViewModel.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
+		C96E673A299C0377007D986C /* ClothesView */ = {
+			isa = PBXGroup;
+			children = (
+				C9F444BD296854DB0081DFFC /* ClothesView.swift */,
+				C9F444AE296720600081DFFC /* ClotheDetailView.swift */,
+				C935CE8A298D658900E7F844 /* ClothesViewViewModel.swift */,
+			);
+			path = ClothesView;
+			sourceTree = "<group>";
+		};
 		C9F444612951E4BB0081DFFC = {
 			isa = PBXGroup;
 			children = (
 				C9F4446C2951E4BB0081DFFC /* ClothesApp */,
 				C9F4446B2951E4BB0081DFFC /* Products */,
+				C969A52B2A72A64400567358 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +240,13 @@
 			isa = PBXGroup;
 			children = (
 				C9F4446D2951E4BB0081DFFC /* ClothesAppApp.swift */,
-				C9F4446F2951E4BB0081DFFC /* ContentView.swift */,
+				C969A53C2A72BA0F00567358 /* NetworkManager */,
+				C969A5352A72B8EF00567358 /* Components */,
+				C96E672C29993304007D986C /* Model */,
+				C9F4447C2951E4FD0081DFFC /* Views */,
+				C9F4447B2951E4F40081DFFC /* Files */,
 				C9F444712951E4BD0081DFFC /* Assets.xcassets */,
+				C969A52E2A72AD3600567358 /* GoogleService-Info.plist */,
 				C9F444732951E4BD0081DFFC /* Preview Content */,
 			);
 			path = ClothesApp;
@@ -65,6 +258,25 @@
 				C9F444742951E4BD0081DFFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9F4447B2951E4F40081DFFC /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9F44486295302150081DFFC /* Color-theme.swift */,
+				C9F444B22967634E0081DFFC /* FileManager.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		C9F4447C2951E4FD0081DFFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C969A5262A72A47B00567358 /* RootView.swift */,
+				C969A53B2A72B9E800567358 /* AuthenticationViews */,
+				C969A53A2A72B9DA00567358 /* TabViews */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +295,11 @@
 			dependencies = (
 			);
 			name = ClothesApp;
+			packageProductDependencies = (
+				C969A5142A72999E00567358 /* FirebaseAnalytics */,
+				C969A5162A72999E00567358 /* FirebaseAnalyticsSwift */,
+				C969A52C2A72A64400567358 /* FirebaseAuth */,
+			);
 			productName = ClothesApp;
 			productReference = C9F4446A2951E4BB0081DFFC /* ClothesApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +328,9 @@
 				Base,
 			);
 			mainGroup = C9F444612951E4BB0081DFFC;
+			packageReferences = (
+				C969A5132A72999E00567358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C9F4446B2951E4BB0081DFFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9F444752951E4BD0081DFFC /* Preview Assets.xcassets in Resources */,
+				C969A52F2A72AD3600567358 /* GoogleService-Info.plist in Resources */,
 				C9F444722951E4BD0081DFFC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +358,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F444702951E4BB0081DFFC /* ContentView.swift in Sources */,
+				C9F444CC296DDB540081DFFC /* BagItemView.swift in Sources */,
+				C96E6731299937BF007D986C /* RatingViewViewModel.swift in Sources */,
+				C9F4447E2951E5110081DFFC /* Clothe.swift in Sources */,
 				C9F4446E2951E4BB0081DFFC /* ClothesAppApp.swift in Sources */,
+				C9F444B32967634E0081DFFC /* FileManager.swift in Sources */,
+				C96E6746299D3596007D986C /* ProductDetailView.swift in Sources */,
+				C969A5372A72B91200567358 /* Order.swift in Sources */,
+				C969A5342A72B0BE00567358 /* AccountViewViewModel.swift in Sources */,
+				C969A5192A729CF500567358 /* AuthView.swift in Sources */,
+				C9F444B1296763430081DFFC /* Favorites.swift in Sources */,
+				C969A5272A72A47B00567358 /* RootView.swift in Sources */,
+				C9F44487295302150081DFFC /* Color-theme.swift in Sources */,
+				C9F444C6296AF8F10081DFFC /* RatingView.swift in Sources */,
+				C9F444BE296854DB0081DFFC /* ClothesView.swift in Sources */,
+				C935CE8B298D658900E7F844 /* ClothesViewViewModel.swift in Sources */,
+				C96E6742299C0475007D986C /* Product.swift in Sources */,
+				C9F444B6296854770081DFFC /* AppTabView.swift in Sources */,
+				C969A5202A729DA400567358 /* SignUpEmailView.swift in Sources */,
+				C96E673C299C0441007D986C /* ProductsView.swift in Sources */,
+				C9F444AF296720600081DFFC /* ClotheDetailView.swift in Sources */,
+				C969A51C2A729D1200567358 /* AuthManager.swift in Sources */,
+				C96E6740299C0464007D986C /* ProductsViewViewModel.swift in Sources */,
+				C9F444B8296854920081DFFC /* FavoritesView.swift in Sources */,
+				C9F444BC296854CE0081DFFC /* BagView.swift in Sources */,
+				C969A5222A72A32A00567358 /* AuthDataModel.swift in Sources */,
+				C969A5322A72B0B700567358 /* AccountView.swift in Sources */,
+				C969A5292A72A5CE00567358 /* SignUpEmailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +521,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +551,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +587,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C969A5132A72999E00567358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C969A5142A72999E00567358 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C969A5132A72999E00567358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C969A5162A72999E00567358 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C969A5132A72999E00567358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		C969A52C2A72A64400567358 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C969A5132A72999E00567358 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9F444622951E4BB0081DFFC /* Project object */;
 }
