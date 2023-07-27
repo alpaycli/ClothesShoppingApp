@@ -16,10 +16,19 @@ final class SignUpEmailViewModel: ObservableObject {
         
         guard !email.isEmpty, !password.isEmpty else {
             print("Email or password is missing")
-            return
+            throw AuthError.badEmailOrPassword
         }
         
         try await AuthManager.shared.createUser(email: email, password: password)
+    }
+    
+    func signInWithEmail() async throws {
+        guard !email.isEmpty, !password.isEmpty else {
+            print("Email or password is missing")
+            throw AuthError.badEmailOrPassword
+        }
+        
+        try await AuthManager.shared.signInUser(email: email, password: password)
     }
     
 }

@@ -28,6 +28,15 @@ struct SignUpEmailView: View {
                         do {
                             try await viewModel.signUpWithEmail()
                             showSignInView = false
+                            return
+                        } catch {
+                            
+                        }
+                        
+                        do {
+                            try await viewModel.signInWithEmail()
+                            showSignInView = false
+                            return
                         } catch {
                             throw AuthError.badEmailOrPassword
                         }

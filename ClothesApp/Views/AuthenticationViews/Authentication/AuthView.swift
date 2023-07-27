@@ -15,12 +15,19 @@ struct AuthView: View {
                 NavigationLink {
                     SignUpEmailView(showSignInView: $showSignInView)
                 } label: {
-                    Text("Sign-in with Email")
+                    Text("Sign-up with Email")
                         .foregroundColor(.primary)
                         .padding()
                         .background(.blue)
                         .cornerRadius(10)
                 }
+                NavigationLink {
+                    
+                } label: {
+                    Text("Already have an account ? Sign in with email")
+                        .foregroundColor(.secondary)
+                }
+                
                 Spacer()
             }
             .navigationTitle("Authentication")

@@ -18,4 +18,12 @@ struct AuthDataModel {
         self.email = user.email
         self.photoURL = user.photoURL
     }
+    
+    init(id: String, email: String?, photoURL: URL?) {
+        self.id = id
+        self.email = email
+        self.photoURL = photoURL
+    }
+    
+    static let exampleUser = AuthDataModel(id: "", email: "alpaycalalli@gmail.com", photoURL: URL(string: ""))
 }

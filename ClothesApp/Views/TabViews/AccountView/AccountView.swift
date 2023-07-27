@@ -11,6 +11,7 @@ struct AccountView: View {
     @StateObject private var viewModel = AccountViewViewModel()
     
     @Binding var showSignInView: Bool
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -27,6 +28,7 @@ struct AccountView: View {
                     }
                 }
             }
+            .navigationTitle("Account")
         }
     }
 }

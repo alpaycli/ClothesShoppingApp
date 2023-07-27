@@ -29,6 +29,13 @@ final class AuthManager: ObservableObject {
         return AuthDataModel(user: authResult.user)
     }
     
+    @discardableResult
+    func signInUser(email: String, password: String) async throws -> AuthDataModel {
+        let authResult = try await Auth.auth().signIn(withEmail: email, password: password)
+        
+        return AuthDataModel(user: authResult.user)
+    }
+    
     func signOut() throws {
         try Auth.auth().signOut()
     }
