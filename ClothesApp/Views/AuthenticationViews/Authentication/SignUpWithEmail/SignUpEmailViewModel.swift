@@ -15,7 +15,6 @@ final class SignUpEmailViewModel: ObservableObject {
     func signUpWithEmail() async throws {
         
         guard !email.isEmpty, !password.isEmpty else {
-            print("Email or password is missing")
             throw AuthError.badEmailOrPassword
         }
         
@@ -24,7 +23,6 @@ final class SignUpEmailViewModel: ObservableObject {
     
     func signInWithEmail() async throws {
         guard !email.isEmpty, !password.isEmpty else {
-            print("Email or password is missing")
             throw AuthError.badEmailOrPassword
         }
         

@@ -10,7 +10,7 @@ import SwiftUI
 struct ClotheDetailView: View {
     let clothe: Clothe
     
-    @EnvironmentObject var favorites: Favorites
+    @StateObject var favorites: Favorites
     @EnvironmentObject var order: Order
     @State private var rating = 3
     
@@ -83,7 +83,7 @@ struct ClotheDetailView: View {
 struct ClotheDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ClotheDetailView(clothe: Clothe.example)
+            ClotheDetailView(clothe: Clothe.example, favorites: Favorites())
                 .environmentObject(Order())
         }
     }

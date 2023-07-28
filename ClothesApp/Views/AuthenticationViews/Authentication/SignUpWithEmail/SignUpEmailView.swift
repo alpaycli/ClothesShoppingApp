@@ -44,11 +44,13 @@ struct SignUpEmailView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .padding(.vertical)
-                    
+                
                 Spacer()
+                    
             }
             .padding()
             .navigationTitle("Sign-up with Email")
+            
         }
     }
 }

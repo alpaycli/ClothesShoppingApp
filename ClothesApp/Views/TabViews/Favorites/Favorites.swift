@@ -9,19 +9,22 @@ import Foundation
 
 @MainActor class Favorites: ObservableObject {
     
-    @Published var clothes: [String]
+    @Published var clothes: [String] = []
     
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
     
     
     init() {
+        loadData()
+    }
+    
+    func loadData() {
         do {
             let data = try Data(contentsOf: savePath)
             clothes = try JSONDecoder().decode([String].self, from: data)
         } catch {
             clothes = []
         }
-    
     }
     
     func contains(_ clothe: Clothe) -> Bool {

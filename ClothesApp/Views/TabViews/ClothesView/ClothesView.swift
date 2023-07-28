@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClothesView: View {
-    @StateObject var favorites = Favorites()
+    @ObservedObject var favorites: Favorites
     @EnvironmentObject var order: Order
     
     @StateObject var vm = ViewModel()
@@ -19,7 +19,7 @@ struct ClothesView: View {
                 LazyVGrid(columns: vm.columns) {
                     ForEach(vm.filteredClothes) { item in
                         NavigationLink {
-                            ClotheDetailView(clothe: item)
+                            ClotheDetailView(clothe: item, favorites: favorites)
                                 .environmentObject(order)
                         } label: {
                             VStack {
@@ -69,7 +69,7 @@ struct ClothesView: View {
 
 struct ClothesView_Previews: PreviewProvider {
     static var previews: some View {
-        ClothesView()
+        ClothesView(favorites: Favorites())
             .environmentObject(Order())
     }
 }

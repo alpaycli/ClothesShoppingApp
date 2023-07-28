@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductsView: View {
-    @StateObject var favorites = Favorites()
+    @ObservedObject var favorites: Favorites
     @EnvironmentObject var order: Order
     
     @StateObject var vm = ViewModel()
@@ -67,6 +67,6 @@ struct ProductsView: View {
 
 struct ProductsView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductsView()
+        ProductsView(favorites: Favorites())
     }
 }

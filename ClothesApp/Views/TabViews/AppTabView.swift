@@ -9,19 +9,21 @@ import SwiftUI
 
 struct AppTabView: View {
     @Binding var showSignInView: Bool
+    
+    @StateObject var favorites = Favorites()
     var body: some View {
         TabView {
-            ClothesView()
+            ClothesView(favorites: favorites)
                 .tabItem {
                     Label("Clothes", systemImage: "tshirt")
                 }
             
-            ProductsView()
+            ProductsView(favorites: favorites)
                 .tabItem {
                     Label("Products", systemImage: "product")
                 }
             
-            FavoritesView(favorites: Favorites())
+            FavoritesView()
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
                 }

@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    @ObservedObject var favorites: Favorites
+    @StateObject var favorites = Favorites()
+    
     var body: some View {
         NavigationView {
             VStack {
-                List(Array(favorites.clothes), id: \.self) { item in
+                List(favorites.clothes, id: \.self) { item in
                     Text(item)
                 }
             }
+            .navigationTitle("Favorites")
         }
+        .onAppear(perform: favorites.loadData)
     }
 }
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView(favorites: Favorites())
+        FavoritesView()
             
     }
 }

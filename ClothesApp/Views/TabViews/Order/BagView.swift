@@ -42,7 +42,7 @@ struct BagView: View {
                             
                             
                             NavigationLink {
-                                ClothesView()
+                               
                             } label: {
                                 Text("CONTINUE SHOPPING")
                                     .frame(width: 300, height: 45)
